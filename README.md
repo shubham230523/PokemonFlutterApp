@@ -1,16 +1,29 @@
-# pokemon_riverpod
+# Pokemon Flutter App 🎮
 
-A new Flutter project.
+A retro-style Pokemon game built from scratch using the Flutter framework. This project recreates the nostalgic feel of the Game Boy Advance era, specifically drawing inspiration from Pokemon Emerald, Ruby, and Sapphire. It features map exploration, sprite-based animations, and a turn-based battle system.
 
-## Getting Started
+## 🌟 Features
 
-This project is a starting point for a Flutter application.
+* **Retro Game Boy UI:** A custom-built user interface that mimics the classic handheld console, complete with a functional D-pad and A/B buttons.
+* **Sprite Animations:** Smooth walking cycles for the main character and NPCs, implemented by cycling through sprite sheets.
+* **Map Exploration:** Detailed recreation of "Littleroot Town" and the "Pokemon Lab," including seamless map transitions when entering or exiting buildings.
+* **Collision Detection:** Logic-based "No-Man's Land" system to prevent characters from walking through walls, houses, or environmental objects.
+* **Turn-Based Battles:** A functional battle system featuring Pikachu vs. Charmander, including health bars, animated character entries, and attack logic.
+* **NPC Interaction:** Dynamic interaction with Professor Oak, including dialogue bubbles and directional facing logic.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* **Framework:** [Flutter](https://flutter.dev/)
+* **Language:** [Dart](https://dart.dev/)
+* **State Management:** `setState` and `Timer`-driven logic for game loops and animations.
+* **Layout:** Utilizes `Stack`, `Column`, `Row`, and `AspectRatio` for a responsive and consistent game-screen experience.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📂 Project Structure
+
+```text
+lib/
+├── characters/     # Character sprite logic (Boy, Oak, Pokemon)
+├── maps/           # Map definitions (Littleroot, Pokemon Lab, Battleground)
+├── images/         # Asset folder containing sprite sheets and map tiles
+├── utilities/      # Reusable UI components (Health bar, buttons, chat bubbles)
+└── main.dart       # Main game engine and UI orchestration
